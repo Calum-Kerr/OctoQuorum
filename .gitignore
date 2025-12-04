@@ -11,17 +11,29 @@ dist/
 # VS Code extension package
 *.vsix
 
-# Environment
+# Environment variables
 .env
 .env.local
+.env*.local
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# Editor
+# Editor settings (keep debug/task configs)
 .vscode/*
 !.vscode/extensions.json
 !.vscode/launch.json
 !.vscode/tasks.json
+!.vscode/settings.json
 
+# TypeScript cache
+*.tsbuildinfo
+
+# Test output
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
